@@ -4,6 +4,10 @@ import ModuleListScreen from "./src/components/screens/ModuleListScreen";
 import ModuleAddScreen from "./src/components/screens/ModuleAddScreen";
 import ModuleModifyScreen from "./src/components/screens/ModuleModifyScreen";
 import ModuleViewScreen from "./src/components/screens/ModuleViewScreen";
+import UserListScreen from "./src/components/screens/UserListScreen";
+import UserAddScreen from "./src/components/screens/UserAddScreen";
+import UserViewScreen from "./src/components/screens/UserViewScreen";
+import UserModifyScreen from "./src/components/screens/UserModifyScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +44,26 @@ export const App = () => {
           name="ModuleModifyScreen"
           component={ModuleModifyScreen}
           options={{ title: "Modify Modules" }}
+        />
+        <Stack.Screen
+          name="UserListScreen"
+          component={UserListScreen}
+          options={{ title: "List Users" }}
+        />
+        <Stack.Screen
+          name="UserAddScreen"
+          component={UserAddScreen}
+          options={{ title: "Add Users" }}
+        />
+        <Stack.Screen
+          name="UserViewScreen"
+          component={UserViewScreen}
+          options={{ title: "View Users" }}
+        />
+        <Stack.Screen
+          name="UserModifyScreen"
+          component={UserModifyScreen}
+          options={{ title: "Modify Users" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
