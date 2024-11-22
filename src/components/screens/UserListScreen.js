@@ -1,5 +1,6 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import Screen from "../layout/Screen";
+import UserList from "../entity/users/UserList.js";
 
 import initialUsers from "../../data/users.js";
 
@@ -8,37 +9,17 @@ const UserListScreen = () => {
   const users = initialUsers;
   // State--
   // Handlers--
-  const handleSelect = () => alert("Item selected");
+  const handleSelect = (user) => alert(`Item ${user.UserFirstname} selected`);
   // View--
   return (
     <Screen>
-      <ScrollView style={styles.container}>
-        {users.map((user) => {
-          return (
-            <Pressable key={user.UserFirstname} onPress={handleSelect}>
-              <View style={styles.item}>
-                <Text style={styles.text}>
-                  {user.UserFirstname} {user.UserLastname} {user.UserType}
-                </Text>
-              </View>
-            </Pressable>
-          );
-        })}
-      </ScrollView>
+      <UserList users={users} onSelect={handleSelect} />
     </Screen>
   );
 };
 
 const styles = StyleSheet.create({
   container: {},
-  item: {
-    paddingVertical: 15,
-    borderTopWidth: 1,
-    borderColor: "lightgray",
-  },
-  text: {
-    fontSize: 16,
-  },
 });
 
 export default UserListScreen;
