@@ -1,14 +1,16 @@
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import Screen from "../layout/Screen";
+import UserView from "../entity/users/UserView";
 
-const UserViewScreen = () => {
+const UserViewScreen = ({ navigate, route }) => {
   // Initialisations--
+  const { user } = route.params;
   // State--
   // Handlers--
   // View--
   return (
     <Screen>
-      <Text>View</Text>
+      <UserView user={user} />
     </Screen>
   );
 };
