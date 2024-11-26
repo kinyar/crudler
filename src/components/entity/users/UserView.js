@@ -1,12 +1,20 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Alert, StyleSheet, Text, View } from "react-native";
 import FullWidthImage from "react-native-fullwidth-image";
 import Icons from "../../UI/Icons";
 import { Button, ButtonTray } from "../../UI/Button";
 
-const UserView = ({ user }) => {
+const UserView = ({ user, onDelete }) => {
   // initialisations --
   // state --
   // handlers --
+  const handleDelete = () => onDelete(user);
+
+  const requestDelete = () =>
+    Alert.alert(
+      "Delete warning",
+      `Are you sure you want to delete user ${user.UserFirstname} ${user.UserLastname}`,
+      [{ text: "Cancel" }, { text: "Delete", onPress: handleDelete }]
+    );
   // view --
   return (
     <View style={styles.container}>
@@ -24,7 +32,11 @@ const UserView = ({ user }) => {
         </Text>
         <ButtonTray>
           <Button icon={<Icons.Edit />} label="Modify" />
-          <Button icon={<Icons.Delete />} label="Delete" />
+          <Button
+            icon={<Icons.Delete />}
+            label="Delete"
+            onClick={requestDelete}
+          />
         </ButtonTray>
       </View>
     </View>
