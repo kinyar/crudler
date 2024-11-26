@@ -11,10 +11,16 @@ const UserListScreen = ({ navigation }) => {
   const [users, setUsers] = useState(initialUsers);
 
   // Handlers--
-  const handleSelect = (user) =>
-    navigation.navigate("UserViewScreen", { user });
   const handleDelete = (user) =>
     setUsers(users.filter((item) => item.UserID !== user.UserID));
+
+  const onDelete = (user) => {
+    handleDelete(user);
+    navigation.goBack();
+  };
+
+  const handleSelect = (user) =>
+    navigation.navigate("UserViewScreen", { user, onDelete });
 
   // View--
   return (

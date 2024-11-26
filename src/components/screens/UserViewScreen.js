@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 import Screen from "../layout/Screen";
 import UserView from "../entity/users/UserView";
 
-const UserViewScreen = ({ navigate, route }) => {
+const UserViewScreen = ({ navigation, route }) => {
   // Initialisations--
-  const { user } = route.params;
+  const { user, onDelete } = route.params;
   // State--
   // Handlers--
   // View--
   return (
     <Screen>
-      <UserView user={user} />
+      <UserView user={user} onDelete={onDelete} />
     </Screen>
   );
 };
