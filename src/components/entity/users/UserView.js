@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import FullWidthImage from "react-native-fullwidth-image";
+import Icons from "../../UI/Icons";
+import { Button, ButtonTray } from "../../UI/Button";
 
 const UserView = ({ user }) => {
   // initialisations --
@@ -20,6 +22,10 @@ const UserView = ({ user }) => {
         <Text style={styles.dimText}>
           {user.UserType} {user.UserYear}
         </Text>
+        <ButtonTray>
+          <Button icon={<Icons.Edit />} label="Modify" />
+          <Button icon={<Icons.Delete />} label="Delete" />
+        </ButtonTray>
       </View>
     </View>
   );
