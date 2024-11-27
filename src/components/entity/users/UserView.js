@@ -3,7 +3,7 @@ import FullWidthImage from "react-native-fullwidth-image";
 import Icons from "../../UI/Icons";
 import { Button, ButtonTray } from "../../UI/Button";
 
-const UserView = ({ user, onDelete }) => {
+const UserView = ({ user, onDelete, onModify }) => {
   // initialisations --
   // state --
   // handlers --
@@ -31,7 +31,7 @@ const UserView = ({ user, onDelete }) => {
           {user.UserType} {user.UserYear}
         </Text>
         <ButtonTray>
-          <Button icon={<Icons.Edit />} label="Modify" />
+          <Button icon={<Icons.Edit />} label="Modify" onClick={onModify} />
           <Button
             icon={<Icons.Delete />}
             label="Delete"

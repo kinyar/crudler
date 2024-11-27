@@ -1,14 +1,22 @@
 import { StyleSheet, Text } from "react-native";
 import Screen from "../layout/Screen";
+import UserForm from "../entity/users/UserForm.js";
 
-const UserModifyScreen = () => {
+const UserModifyScreen = ({ navigation, route }) => {
   // Initialisations--
+  const { user, onModify } = route.params;
   // State--
   // Handlers--
+  const handleCancel = navigation.goBack;
+
   // View--
   return (
     <Screen>
-      <Text>Modify</Text>
+      <UserForm
+        originalUser={user}
+        onSubmit={onModify}
+        onCancel={handleCancel}
+      />
     </Screen>
   );
 };

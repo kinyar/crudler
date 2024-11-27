@@ -17,6 +17,13 @@ const UserListScreen = ({ navigation }) => {
 
   const handleAdd = (user) => setUsers([...users, user]);
 
+  const handleModify = (updatedUser) =>
+    setUsers(
+      users.map((user) =>
+        user.UserID === updatedUser.UserID ? updatedUser : user
+      )
+    );
+
   const onDelete = (user) => {
     handleDelete(user);
     navigation.goBack();
@@ -27,8 +34,13 @@ const UserListScreen = ({ navigation }) => {
     navigation.goBack();
   };
 
+  const onModify = (user) => {
+    handleModify(user);
+    navigation.navigate("UserListScreen");
+  };
+
   const gotoViewScreen = (user) =>
-    navigation.navigate("UserViewScreen", { user, onDelete });
+    navigation.navigate("UserViewScreen", { user, onDelete, onModify });
 
   const gotoAddScreen = () => navigation.navigate("UserAddScreen", { onAdd });
 
