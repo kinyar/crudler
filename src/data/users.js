@@ -5,7 +5,7 @@ const users = [
     UserLastname: "Jones",
     UserEmail: "Ku06696@kingston.ac.uk",
     UserImageURL:
-      "https://generated.photos/face/neutral-white-middle-aged-male-with-short-gray-hair-and-blue-eyes--5e6849b06d3b380006e3c5cb",
+      "https://generated.photos/face/neutral-white-young-adult-male-with-short-black-hair-and-brown-eyes--5e6804f56d3b380006d48a3d",
     UserType: "Staff",
     UserYear: null,
   },
