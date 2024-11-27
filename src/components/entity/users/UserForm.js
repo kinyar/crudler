@@ -13,7 +13,7 @@ const defaultUser = {
   UserYear: null,
 };
 
-const UserForm = ({ onSubmit, onCancel }) => {
+const UserForm = ({ originalUser, onSubmit, onCancel }) => {
   // Initialisations--
   defaultUser.UserID = Math.floor(100000 + Math.random() * 900000);
   defaultUser.UserImageURL =
@@ -25,15 +25,15 @@ const UserForm = ({ onSubmit, onCancel }) => {
   ];
 
   // State --
-  const [user, setUser] = useState(defaultUser);
+  const [user, setUser] = useState(originalUser || defaultUser);
 
   // Handlers --
   const handleChange = (field, value) => setUser({ ...user, [field]: value });
   const handleSubmit = () => onSubmit(user);
 
   // View --
-  const submitLabel = "Add";
-  const submitIcon = <Icons.Add />;
+  const submitLabel = originalUser ? "Modify" : "Add";
+  const submitIcon = originalUser ? <Icons.Edit /> : <Icons.Add />;
   return (
     <Form
       onSubmit={handleSubmit}
