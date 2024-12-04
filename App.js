@@ -30,7 +30,7 @@ const ModuleStack = () => (
       options={{
         title: "List Modules",
         headerTitle: (props) => (
-          <View style={{ flex: 1, flexDirection: "row" }}>
+          <View style={{ flex: 1, flexDirection: "row", fontSize: 20 }}>
             <Text>{props.children}</Text>
           </View>
         ),
@@ -65,7 +65,14 @@ const UserStack = () => (
     <Stack.Screen
       name="UserListScreen"
       component={UserListScreen}
-      options={{ title: "List Users" }}
+      options={{
+        title: "List Users",
+        headerTitle: (props) => (
+          <View style={{ flex: 1, flexDirection: "row", fontSize: 20 }}>
+            <Text>{props.children}</Text>
+          </View>
+        ),
+      }}
     />
     <Stack.Screen
       name="UserAddScreen"

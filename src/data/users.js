@@ -6,7 +6,7 @@ const users = [
     UserEmail: "Ku06696@kingston.ac.uk",
     UserImageURL:
       "https://generated.photos/face/neutral-white-young-adult-male-with-short-black-hair-and-brown-eyes--5e6804f56d3b380006d48a3d",
-    UserType: "Staff",
+    UserType: "(Staff)",
     UserYear: null,
   },
   {
@@ -16,7 +16,7 @@ const users = [
     UserEmail: "K1234567@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/IitdqDaBBrr4auYZFuuC_dplp3OtwU2cCuN4q35rN8M/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92Ml8w/NDcyMTg5LmpwZw.jpg",
-    UserType: "Staff",
+    UserType: "(Staff)",
     UserYear: null,
   },
   {
@@ -26,7 +26,7 @@ const users = [
     UserEmail: "K3346661@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/1zzVOGo2BC7zlIbuqtT9E03KbcRrCFw0CeIkCRH-pQo/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTU2NTI4LmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
   {
@@ -36,7 +36,7 @@ const users = [
     UserEmail: "K3265517@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/BdRHDOlzfO2nY3cm9SJuBaf_LPCCv0tzUq3hSv6-Ub8/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDYzODY2LmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
   {
@@ -46,7 +46,7 @@ const users = [
     UserEmail: "K8769678@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/JaFMncOoAFAerEyw_xWIeFMjzgfkkseT_oGEyP6CgQI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MzI5MTY3LmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
   {
@@ -56,7 +56,7 @@ const users = [
     UserEmail: "K6664833@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/XRfSKWBVup-KW5T_lvS0tyce6rGaEBKUDWvk6lxZ8x8/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MDIwNTQwLmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
   {
@@ -66,7 +66,7 @@ const users = [
     UserEmail: "K6845215@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/XtsBlRxQLgWzFAtycpalUkvVdf9tAvCfC9vEPtSVaxY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MzQ2ODE2LmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
   {
@@ -76,7 +76,7 @@ const users = [
     UserEmail: "K1083353@kingston.ac.uk",
     UserImageURL:
       "https://images.generated.photos/eL1-OlKDqGf1IaL_b2O8aSj7osDX_eFVHZEoJ0f3ZV0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzYwNjc0LmpwZw.jpg",
-    UserType: "Student",
+    UserType: "(Student)",
     UserYear: "2022-23",
   },
 ];
